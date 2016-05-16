@@ -2,7 +2,7 @@
 Returns a list of houses within 20 miles of the search parameters. Can accept lat/long geocoordinates or a string address.
 
 ### Usage
-Clone repo, then start server by running `npm start`. Unit tests can be run with `npm run test`.
+Clone repo, then install dependencies with `npm install`. Start server by running `npm start`. Unit tests can be run with `npm run test`.
 
 ### Endpoints
 One endpoint is available for use, /properties
