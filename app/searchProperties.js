@@ -14,7 +14,8 @@ properties.forEach((property) => {
 // Uses kd-tree module to search properties within 20 miles of given geocoordinates
 // kd-tree module documentation: https://github.com/ubilabs/kd-tree-javascript
 
-// distance function based on Haversine formula converted to miles
+// Distance function based on Haversine formula
+// Multiply result by 3959 * 2 to convert to miles
 const distance = (a, b) => {
   var lat1 = a.lat,
   lon1 = a.long,
@@ -31,6 +32,7 @@ const distance = (a, b) => {
   return Math.atan2(Math.sqrt(a), Math.sqrt(1-a)) * 3959 * 2;
 }
 
+// Creates the kd-tree using the distance function and property data
 const tree = kdt.createKdTree(properties, distance, ['lat', 'long']);
 
 const searchProperties = (geoCoordObj) => {
