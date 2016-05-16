@@ -41,6 +41,6 @@ const searchProperties = (geoCoordObj) => {
   }
 
   return tree.nearest({lat: geoCoordObj.lat, long: geoCoordObj.long}, properties.length, 20);
-};
+}
 
 module.exports = searchProperties;
