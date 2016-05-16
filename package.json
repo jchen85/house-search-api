@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "start": "node index.js"
   },
   "repository": {
@@ -19,6 +19,12 @@
   "homepage": "https://github.com/jchen85/house-search-api#readme",
   "dependencies": {
     "express": "^4.13.4",
-    "kdt": "^0.1.0",
+    "kdt": "^0.1.0"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^2.4.5",
+    "really-need": "^1.9.2",
+    "supertest": "^1.2.0"
   }
 }
