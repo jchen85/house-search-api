@@ -1,7 +1,8 @@
 const path = require('path');
 const superagent = require('superagent');
 const expect = require('expect.js');
-const server = require(path.join(__dirname, '..', 'index'));
+
+const server = require(path.join(__dirname, '..', 'app', 'server'));
 
 describe('/properties endpoint', function () {
   var testServer;
