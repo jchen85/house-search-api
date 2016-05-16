@@ -19,6 +19,6 @@
   "homepage": "https://github.com/jchen85/house-search-api#readme",
   "dependencies": {
     "express": "^4.13.4",
-    "rbush": "git+https://github.com/mourner/rbush.git"
+    "kdt": "^0.1.0",
   }
 }
